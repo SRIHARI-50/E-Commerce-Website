@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Sri Electronics | Services </title> <!-- Tab Title  -->
+        <!-- linking CSS file -->
+        <link rel="stylesheet" type="text/css" href ="style.css"> 
+
+        <!-- linking Font Awesome icons-->
+        <link rel="stylesheet" type="text/css" href ="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+
+    </head>
+
+    <body>
+        <!-- Navigation Tab -->
+        <nav class = "nav nav_top"> 
+            <div class="left_side">
+                <div class = "logo"> <!-- Logo insertion-->
+                    <a href ="Home_page.html"> <img src="Sri logo.png" width="100"> </a>
+                </div>
+            </div>
+
+            <div class="right_side">
+                <div class = "company_name"> SRI ELECTRONICS </div>
+
+                <div class = "nav_side"> <!-- external links-->
+                    <a href="about.html"> About Us </a>
+                    <a href="service.html"> Services </a>
+                    <a href="contact.html"> Contact Us </a>
+                </div>
+            </div>
+        </nav>
+
+        <div class ="product" style="padding-top: 100px;"> <!-- Shopping Products -->
+            <h2> Our Products </h2>
+
+            <div class="product_container" style=" padding-bottom: 50px;">
+
+                <div class="item"> <!-- Product one - Pendrive -->
+
+                    <div class="item_img">
+                        <img src="Pendrive.jpg"> 
+                    </div>
+
+                    <div class="item_content">
+                        <h3> USB Pendrive </h3>
+                        <p> This stylish looking compact and portable drive can easily fit into a pocket or handbag. 
+                            At a write speed of 4 MB per second and read speed of 14 MB per second.</p>
+                        <a href="#"> Buy Now </a>
+                    </div>
+
+                </div>
+
+                <div class="item"> <!-- Product two - Hard Disk -->
+
+                    <div class="item_img">
+                        <img src="Hard Disk.jpeg">
+                    </div>
+
+                    <div class="item_content">
+                        <h3> External Hard Disc </h3>
+                        <p> Seagate One Touch 1TB External HDD with Password Protection Space Gray, for Windows and Mac, with 3 yr
+                            Data Recovery Services. </p>
+                        <a href="#"> Buy Now </a>
+                    </div>
+                    
+                </div>
+
+                <div class="item"> <!-- Product three - Gaming Laptop -->
+
+                    <div class="item_img">
+                        <img src="Laptop.png">
+                    </div>
+
+                    <div class="item_content">
+                        <h3> Gaming Laptop </h3>
+                        <p> Acer Predator Helios 300 Gaming Laptop Intel Core I9 11th Gen 
+                            (32 GB/1TB SSD/ NVIDIA GeForce RTX 3070/Windows 11 Home/300hz) </p>
+                        <a href="#"> Buy Now </a>
+                    </div>
+                    
+                </div>
+                
+            </div>
+
+            
+            <div class="product_btn"> <!-- Exploring the products -->
+                <a href="service.html"> Explore Our Products </a>
+            </div>
+        </div>
+        <!-- Feedback Form -->
+        <div class="feed">
+            <h2> Write a Review </h2>
+            <div class="feed_form">
+                <form name = "submit-googlesheet" method="post" >
+                    <input type="text" name="Name" placeholder="Name"> <br>
+                    <input type="email" name="Email" placeholder="Email Id"> <br>
+                    <input type="number" name="Number" placeholder="Contact Number"> <br>
+                    <textarea rows="5" cols="7" name="Review" placeholder=" Write Your Review "> </textarea> <br>
+                    <button type="submit"> Submit </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Footer part of the E-Commerce Website-->
+        <footer>
+            <div class = "footer_logo"> <!-- Logo insertion-->
+                <a href ="Home_page.html"> <img src="Sri logo.png" width="100"> </a>
+            </div>
+            <div class="container">
+                <div class=" left_container">
+                    <div class="pages"> <!-- Pages -->
+                        <h3> Pages </h3>
+                        <a href="about.html"> About Us </a> |
+                        <a href="service.html"> Services </a> |
+                        <a href=" "> Login </a> |
+                        <a href=" "> Sign Up </a>
+                    </div>
+
+                    <div class="social"> <!-- Follow us -->
+                        <h3> Follow Us </h3>
+                        <a href=""> <i class="fa-brands fa-facebook"></i> </a>
+                        <a href=""> <i class="fa-brands fa-instagram"></i> </a>
+                        <a href=""> <i class="fa-brands fa-linkedin"></i> </a>
+                        <a href=""> <i class="fa-brands fa-twitter"></i> </a>
+                    </div>
+                </div>
+
+                <div class="right_container">
+                    <div class="doc"> <!-- Documents -->
+                        <h3> Documents </h3>
+                        <a href=""> Privacy Policy </a> |
+                        <a href=""> Terms Of Use </a> |
+                        <a href=""> Refund Policy</a> 
+                    </div>
+
+                    <div class="contact"> <!-- Contact Us -->
+                        <h3> Contact Us </h3>
+                        <a href="contact.html"> <i class="fa-solid fa-address-card"></i> </a>
+                        <a href="https://api.WhatsApp.com/send?phone=+919876543219" target="_blank"> <i class="fa-brands fa-whatsapp"></i> </a>
+                        <a href="tel: +919876543219 "> <i class="fa-solid fa-phone"></i> </a>
+                        <a href="mailto: support.srielectronics@gmail.com"> <i class="fa-solid fa-envelope"></i> </a>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <p> Copyright &copy; 2022 1stop. All rights reserved </p>
+        </footer>
+
+        <!-- Linking the feedback form with the google sheet-->
+        <script type="text/javascript">
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbyPKcMxF6PtOoel1uRGWhHg7GRSZXwjlLwcxEOqTGveuv8j6ZdMn3fMkUCEkDtc2nu4/exec'
+            const form = document.forms['submit-googlesheet']
+
+            form.addEventListener('submit',e =>{
+                e.preventDefault()
+                fetch(scriptURL, {method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thank you for your feedback....  Happy Shopping!! "))
+                .catch(error => console.error('Error!',error.message)) 
+            })
+        </script>
+
+    </body>
+
+</html>

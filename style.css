@@ -1,0 +1,578 @@
+/* navigation part or Header part */
+.nav{ /* Nav class*/
+    background-color: rgb(86, 101, 115);
+    z-index: 9; 
+    padding: 10px;
+    padding-left: 100px;
+    padding-right: 50px;
+    display: flex;
+    box-shadow: 0px 3px 65px 0px rgba(255, 255, 255, 10); /* 4th segment - shadow */
+}
+
+.nav_top{ /* nav position */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+}
+
+.left_side{
+    float: left;
+    width: 10%;
+}
+
+.right_side{
+    float: right;
+    width: 90%;
+}
+
+.logo{ /* Logo position */
+    text-align: center;
+    width: 10%;
+}
+
+.logo img{ /* image size*/
+    padding: 5px;
+    border-radius: 40%;
+}
+
+.company_name{ /* Sri electronics heading */
+    float: left;
+    padding-top: 25px;
+    color: rgb(248, 249, 249);
+    font-weight: bold;
+    font-family: Lucida Sans Unicode;
+    font-size: 35px;
+}
+
+.nav_side{ /* about us, Service, Contact us, login positions*/
+    float:right;
+    padding-left: 20%;
+    padding-right: 5%;
+    padding-top: 30px;
+}
+
+.nav_side a{ /* about us, Service, Contact us, login stylings*/
+    text-decoration: none;
+    margin-right: 40px;
+    color: rgb(248, 249, 249);
+    font-weight: bold;
+    font-family: Lucida Sans;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.nav_side a:hover{ /* about us, Service, Contact us, login transitions*/
+    color: rgb(77, 208, 225);
+    transition: all;
+}
+
+.main{ /* Background image  */
+    background-image: url('Background image.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 80vh;
+}
+
+.main .main_content{ /* Main Content position */
+    padding-top: 15%;
+    margin-left: 10%;
+    margin-right: 2%;
+}
+
+.main .main_content h2 { /* We make digital marketing simple */
+    color:#546E7A;
+    padding-top: 30px;
+    font-size: 50px;
+    font-family: Lucida Sans Unicode;
+    font-weight: bolder;
+    text-align: right;
+}
+
+.main .main_content h2 span{ /* Stay Connected With Us And Get Your Shopping Done */
+    font-size: 25px;
+    opacity: 0.9;
+    color:#546E7A;
+    font-weight: bold;
+    line-height: 10px;
+    margin-right: 10%;
+}
+
+.product{
+    padding-bottom: 50px;
+}
+
+.product h2{ /* Our Products */
+    color:rgb(86, 101, 115); 
+    font-family:'Times New Roman';
+    font-size: 35px;
+    text-align: center;
+    padding: 20px;
+}
+
+.product .product_container{ /* Product images and texts*/
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.product .product_container .item{ /* Each items*/
+    width: 33.33%;
+    margin: 10px;
+    height: auto;
+}
+
+.product .product_container .item:hover{ /* Each Item Transitions*/
+    box-shadow: 0px 3px 65px 0px rgba(0,0,0,0.15);
+}
+
+.product .product_container .item .item_img{ /* Image position */
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.product .product_container .item .item_img img{ /* Image Size */
+    width: 100%;
+    height: 250px;
+}
+
+.product .product_container .item .item_content{ /* Text alignment */
+    text-align: center;
+}
+
+.product .product_container .item .item_content h3{ /* Sub Headings*/
+    padding: 10px;
+    font-size: 25px;
+    font-family: Lucida Sans ;
+}
+
+.product .product_container .item .item_content p{ /* Description */
+    padding: 10px;
+    font-size: 15px;
+    font-family: Lucida Sans ;
+}
+
+.product .product_container .item .item_content a{ /* Buy Now Stylings */
+    text-decoration: none;
+    margin: 50px;
+    padding: 10px 20px;
+    background-color: #78909C ;
+    color: white;
+    font-family: Lucida Sans ;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.product .product_container .item .item_content a:hover{ /* Buy Now Transitions */
+    background-color: #00838F ;
+    color: white  ;
+    border: none;
+    border-bottom: 4px solid #80DEEA ;
+    transition: 0.5s;
+}
+
+.product .product_btn{ /* Button Position*/
+    text-align: center;
+    margin-top: 50px;
+}
+
+.product .product_btn a{ /* Button Stylings*/
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #78909C ;
+    color: white;
+    font-family: Lucida Sans ;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.product .product_btn a:hover{ /* Button Transitions */
+    background-color: #00838F ;
+    color: white  ;
+    border: none;
+    border-bottom: 4px solid #80DEEA ;
+    transition: 0.5s;
+}
+
+.keypoint{ /* Highlights Position */
+    padding: 50px;
+}
+
+.keypoint h2{ /* Highlights Stylings */
+    color:rgb(86, 101, 115); 
+    font-family:'Times New Roman';
+    font-size: 35px;
+    text-align: center;
+    padding: 10px;
+}
+
+.keypoint .key_container{ /* container position */
+    display: flex;
+}
+
+.keypoint .key_container .key_content{ /* text position */
+    width: 40%;
+    padding: 20px;
+    float: left;
+}
+
+.keypoint .key_container .key_content li{ /* Points Stylings*/
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+    border-left: 2px solid #80DEEA;
+    color: #546E7A;
+    text-align: left;
+    font-family: Lucida Sans ;
+}
+
+.keypoint .key_container .key_content li:hover{ /* Points Transitions */
+    box-shadow: 0px 3px 65px 0px rgba(0,0,0,0.1);
+}
+
+.keypoint .key_container .key_img{ /* Clipart image position */
+    width: 40%;
+    float: right;
+    margin-left: 100px;
+}
+
+.keypoint .key_container .key_img img{ /* Clipart image Size*/
+    width: 100%;
+}
+
+.testi{ /* Our Clients Container */
+    padding: 50px;
+}
+
+.testi h2{ /* Our Client Stylings*/
+    color:rgb(86, 101, 115); 
+    font-family:'Times New Roman';
+    font-size: 35px;
+    text-align: center;
+    padding: 10px;
+}
+
+.testi .testi_container{ /* Each item positons */
+    margin-right: 10%;
+    margin-left: 10%;
+    text-align: center;
+}
+
+.testi .testi_container .carousel-inner{
+    background-color: white;
+    box-shadow: none;
+}
+
+.testi .testi_container .item{ /* item stylings*/
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    box-shadow: none;
+}
+
+.testi .testi_container .item .item_img{ /* Image position */
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.testi .testi_container .item .item_img img{ /* Image Size */
+    width: 200px;
+    height: 200px;
+    border-radius: 25%;
+}
+
+.testi .testi_container .item .item_content{ /* Text alignment */
+    text-align: center;
+}
+
+.testi .testi_container .item .item_content h3{ /* Sub Headings*/
+    padding: 10px;
+    font-size: 25px;
+    font-family: Lucida Sans ;
+}
+
+.testi .testi_container .item .item_content p{ /* Description */
+    padding: 10px;
+    font-size: 15px;
+    font-family: Lucida Sans ;
+}
+
+.team{ /* Video Container positions*/
+    padding: 50px; 
+}
+
+.team h2{ /* Video Subheading Stylings */
+    color:rgb(86, 101, 115); 
+    font-family:'Times New Roman';
+    font-size: 35px;
+    text-align: center;
+    padding: 10px;
+}
+
+.team .team_container{
+    display: flex;
+}
+
+.team .team_container .team_video{ /* Video Container */
+    float: left;
+    width: 50%;
+    padding: 20px;
+    text-align: right;
+}
+
+.team .team_container .team_video video{ /* Video Stylings */
+    width: 75%; 
+    border: 5px solid gray;
+    outline: none;
+}
+
+.team .team_container .team_content{ /* content Positions */
+    float: right;
+    width: 70%;
+    padding-right: 200px;
+    padding-top: 55px;
+}
+
+.team .team_container .team_content p{ /* Content Stylings */
+    padding: 10px;
+    font-size: 15px;
+    font-family: Lucida Sans ;
+}
+
+.feed{ /* Background image */
+    padding: 50px;
+    background-image: url("Feedback Background.jpg");
+    background-size: cover;
+}
+
+.feed h2{ /* Heading stylings */
+    color:black; 
+    font-family:'Times New Roman';
+    font-size: 35px;
+    text-align: center;
+    padding: 10px;
+}
+
+.feed .feed_form{
+    text-align: center;
+}
+
+.feed .feed_form form{ /* Feed back form Alignment */
+    padding: 20px;
+}
+
+.feed .feed_form form input{ /* Input Stylings */
+    width: 30%;
+    margin: 10px;
+    padding: 8px;
+    outline: none;
+    border: none;
+}
+
+.feed .feed_form form textarea{ /* TextArea Stylings*/
+    width: 30%;
+    margin: 10px;
+    padding: 8px;
+    outline: none;
+    border: none;
+}
+
+.feed .feed_form form button{ /* Stylings Stylings*/
+    width: 30%;
+    margin: 10px;
+    padding: 8px;
+    outline: none;
+    border: none;
+    background-color: gray;
+    color: white;
+    border-radius: 10px;
+}
+
+.about_us{
+    padding: 100px;
+}
+
+.about_us h2{ /* About us Subheading Stylings*/
+    color:rgb(86, 101, 115); 
+    font-family:'Times New Roman';
+    font-size: 35px;
+    text-align: center;
+    padding: 10px;
+}
+
+.about_us p{ /* Description Stylings*/
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+    font-family: Lucida Sans ;
+    line-height: 25px;
+}
+
+.contact_container{
+    padding: 100px;
+}
+
+.contact_container h2{ /* Contact us Subheading Stylings*/
+    color:rgb(86, 101, 115); 
+    font-family:'Times New Roman';
+    font-size: 35px;
+    text-align: center;
+    padding: 10px;
+}
+
+.contact_container .g_map{ /* Google maps */
+    border: 10px solid gray;
+}
+
+.contact_container .contact_content{ 
+    padding: 20px;
+}
+
+.contact_container .contact_content p{ /* Contact Address Stylings*/
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+    font-family: Lucida Sans ;
+    line-height: 25px;
+}
+
+footer{ /* Footer Part Stylings*/
+    background-color: #546E7A;
+    padding: 50px;
+}
+
+footer p{ /* Copyright Statement styling */
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-family: Times New Roman;
+    padding: 10px;
+}
+
+footer .footer_logo{ /* Logo Position */
+    text-align: center;
+}
+
+footer .footer_logo img{ /* image size*/
+    padding: 5px;
+    border-radius: 40%;
+    width : 100px;
+    height: 100px;
+}
+
+footer .container{
+    display: flex;
+}
+
+footer .container .left_container{
+    width: 50%;
+    float:left
+}
+
+footer .container .right_container{
+    float: right;
+    width: 50%;
+}
+
+footer .pages{ /* Pages Position*/
+    text-align: center;
+}
+
+footer .pages h3{ /* Text Stylings*/
+    color: white;
+    font-size: 25px;
+    font-family: Times New Roman;
+    padding: 5px;
+}
+
+footer .pages a{ /*links Alignment */
+    text-decoration: none;
+    margin: 10px;
+    color:#80DEEA;
+    font-size: 20px;
+    font-family: Times New Roman ;
+}
+
+footer .pages a:hover{ /* Links Transition*/
+    color: #FFECB3;
+}
+
+footer .doc{ /* docs Position*/
+    text-align: center;
+}
+
+footer .doc h3{ /* Text Stylings*/
+    color: white;
+    font-size: 25px;
+    font-family: Times New Roman;
+    padding: 5px;
+}
+
+footer .doc a{ /*links Alignment */
+    text-decoration: none;
+    margin: 10px;
+    color:#80DEEA;
+    font-size: 20px;
+    font-family: Times New Roman ;
+}
+
+footer .doc a:hover{ /* Links Transition*/
+    color: #FFECB3;
+}
+
+footer .social{ /* social Position*/
+    text-align: center;
+}
+
+footer .social h3{ /* Text Stylings*/
+    color: white;
+    font-size: 25px;
+    font-family: Times New Roman;
+    padding: 5px;
+}
+
+footer .social a{ /*links Alignment */
+    text-decoration: none;
+    font-size: 30px;
+    color:#80DEEA;
+    margin: 10px;    
+}
+
+footer .social a:hover{ /* Links Transition*/
+    color: #FFECB3;
+}
+
+footer .contact{ /* contact Position*/
+    text-align: center;
+}
+
+footer .contact h3{ /* Text Stylings*/
+    color: white;
+    font-size: 25px;
+    font-family: Times New Roman;
+    padding: 5px;
+}
+
+footer .contact a{ /*links Alignment */
+    text-decoration: none;
+    font-size: 30px;
+    color:#80DEEA;
+    margin: 10px;    
+}
+
+footer .contact a:hover{ /* Links Transition*/
+    color: #FFECB3;
+}
